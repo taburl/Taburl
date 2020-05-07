@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>加载中</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+</div>
+</body>
+<script>
+$.ajax({
+    url:'form.json',
+    type:'get',
+    dataType:'json',
+    success:function(str){
+        var obj=str.respData;
+        $(location).prop('href', obj.url);
+        //$('.info-hint').html(obj.url);
+      //  $('.info-hint').on('click',function () {
+
+        })
+    },
+
+});
+
+
+
+            </script>
+</html>
